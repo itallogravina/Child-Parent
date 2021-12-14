@@ -1,4 +1,4 @@
-import FormikExample from "./forms"
+import TextPreview from "./Textpreveiw";
 import React, { useState } from "react";
 
 function App() {
@@ -29,15 +29,15 @@ const myObj2 = {
   age : 1
 }
 
-Object.entries(myObj).forEach(([key, value]) => {
+const tete= Object.entries(myObj).forEach(([key, value]) => {
   value.name=myObj2.name+key
   value.age=myObj2.age+key
-  console.log(value)
+ 
 });
-
+console.log(tete)
   return (
     <div className="App">
-      <FormikExample childToParent={childToParent}/>
+     <TextPreview/>
     </div>
   );
 }
